@@ -1,0 +1,32 @@
+body{
+    background-image: none;
+}
+
+img{
+    width: 20%;
+    padding-top: 5%;
+    margin: auto;
+}
+
+
+
+/* Mobile styling, of course */
+
+@media only screen and (max-width: 700px){
+
+    img{
+        width: 95%;
+        margin: auto;
+    }
+
+    a.fantasyButton{
+        align-self: center;
+        background-color: bisque;
+        transform: translateY(80%);
+        padding: 1%;
+        border-style: solid;
+        border-width: medium;
+    }
+
+
+}

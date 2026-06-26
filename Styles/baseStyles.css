@@ -1,5 +1,12 @@
 body{
+    display: flex;
+    flex-direction: column;
     background-color: bisque;
+    background-image: linear-gradient(to right, rgba(255,228,196,0.7) 0 100%) ,url('../UI_Images/backgroundDragon.png');
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 30%;
+
 }
 
 .fantasyScratch{
@@ -13,12 +20,69 @@ body{
     font-style: italic;
     font-variant: normal;
     text-transform: uppercase;
-    margin: 2%
+    margin: 2%;
+    text-align: center;
 }
 
-img{
-    display: block;
-    width: 20%;
-    padding-top: 10%;
+a.fantasyButton{
+    align-self: center;
+    background-color: bisque;
+    padding: 1%;
+    transform: translateY(-40%);
+    border-style: solid;
+    border-width: medium;
+
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #7a3737;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+    margin: 2%;
+    text-align: center;
+}
+
+a.fantasyButton:hover{
+    background-color:antiquewhite;
+}
+
+.buttonGrid{
+    display: inline-flex;
     margin: auto;
+}
+
+
+
+#mrGrumpy{
+    width: 25%;
+    padding: 0;
+    margin: auto;
+    transform: translateY(30%);
+}
+
+
+/* Mobile styling, of course */
+
+@media only screen and (max-width: 700px){
+
+    #mrGrumpy{
+        width: 95%;
+        padding: 0;
+        margin: auto;
+    }
+
+    a.fantasyButton{
+        align-self: center;
+        background-color: bisque;
+        transform: translateY(80%);
+        padding: 1%;
+        border-style: solid;
+        border-width: medium;
+    }
+
+
 }
