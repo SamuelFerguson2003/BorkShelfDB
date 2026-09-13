@@ -11,13 +11,26 @@ document.addEventListener('DOMContentLoaded', () =>{
         link.addEventListener('click', (e)=> {
             e.preventDefault();
 
+
+            const proceed = () => {
+                if (link.tagName === 'A'){
+                    window.location.href=link.href;
+                }
+                else if (link.tagName === 'BUTTON' && link.form){
+                    link.form.requestSubmit(link)
+                }
+            }
+
             buttonClicked.play().catch(error => {
                 console.error('Error playing sound', error);
-            });
+                proceed();
+            })
+
 
             setTimeout(() => {
-                window.location.href=link.href;
+                proceed();
             }, 500);
+            
         });
     });
 })

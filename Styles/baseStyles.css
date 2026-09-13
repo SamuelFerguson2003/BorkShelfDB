@@ -37,7 +37,8 @@ body{
     text-decoration: none;
     font-style: normal;
     font-variant: normal;
-    margin: 2%;
+    transform: translateY(-20%);
+    margin: 0%;
     text-align: center;
 }
 
@@ -52,15 +53,33 @@ body{
     font-style: normal;
     font-variant: normal;
     text-align: center;
+    transform: translateY(-25%);
 }
 
-a.fantasyButton{
+.royalDeclare {
+  font-family: "Mea Culpa", cursive;
+  color: #582828;
+  font-size: 7rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.royalDeclare span{
+    background-color: rgba(226, 200, 169, 0.425);
+    padding: 1%;
+    border-radius: 25px;
+}
+
+
+.fantasyButton{
     align-self: center;
     background-color: bisque;
     padding: 1%;
     transform: translateY(-40%);
     border-style: solid;
     border-width: medium;
+    cursor: pointer;
 
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 19px;
@@ -76,7 +95,7 @@ a.fantasyButton{
     text-align: center;
 }
 
-a.fantasyButton:hover{
+.fantasyButton:hover{
     background-color:antiquewhite;
 }
 
@@ -84,7 +103,6 @@ a.fantasyButton:hover{
     display: inline-flex;
     margin: auto;
 }
-
 
 
 #mrGrumpy{
@@ -97,6 +115,26 @@ a.fantasyButton:hover{
 /* Mobile styling, of course */
 
 @media only screen and (max-width: 700px){
+
+    body,html{
+        width: auto;
+    }
+    
+    body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    background-image: linear-gradient(to right, rgba(255,228,196,0.7) 0 100%) ,url('../UI_Images/backgroundDragon.png');
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 100%;
+    }
+
+    .royalDeclare{
+        font-size: 3rem;
+        text-align: center;
+    }
 
     #mrGrumpy{
         width: 95%;
@@ -113,5 +151,14 @@ a.fantasyButton:hover{
         border-width: medium;
     }
 
+    .buttonGrid{
+        flex-direction: column;
+        margin: auto;
+    }
 
+    #turnBack{
+        position: fixed;
+        bottom: 0;
+        transform: translateY(-50%);
+    }
 }

@@ -12,15 +12,44 @@
     
     <link rel="icon" href="UI_Images/dragonLogo.png">
     <link rel="stylesheet" href="Styles/baseStyles.css">
+    <link rel="stylesheet" href="Styles/libraryStyles.css">
     <script src="Scripts/soundHandler.js"></script>
 </head>
 <body>
+
+    <audio autoplay loop>
+        <source src="Sounds/Tavern.mp3">
+    </audio>
+
     <div>
         <h1 class="fantasyScratch">The collector's treasures will be unveiled soon!</h1>
     </div>
 
-    <?php 
-    echo "The php is working";
-    ?>
+    <div id="mainContent">
+        <div id="bookshelfGrid">
+            <?php
+            echo "Book details will go here"
+            ?>
+        </div>
+
+        <div id="controlPanel">
+            <div id="searchBar">
+                <input type="text" placeholder="Search" name="searchShelf">
+                <button type="submit" name="sendSearch" class="fantasyButton">Search</button>
+            </div>
+
+            <div id="buttonGrid">
+                <form method="post">
+                    <button type="submit" name="showFinished" class="fantasyButton">Show Finished</button>
+                    <button type="submit" name="showUnread" class="fantasyButton">Show Unread</button>
+                    <button type="submit" name="showNeedtoBuy" class="fantasyButton">Show Need-to-Buy</button>
+                    <button type="submit" name="resetShelf" class="fantasyButton">Reset Shelf</button>
+                </form>
+            </div>
+
+            <a href="home.html" class="fantasyButton" id="turnBack">Return Home</a>
+        </div>
+    </div>
+
 </body>
 </html>
