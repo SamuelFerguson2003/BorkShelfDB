@@ -10,17 +10,47 @@ body{
 }
 
 .fantasyScratch{
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family:  "New Rocker", system-ui;
     font-size: 19px;
     letter-spacing: 2px;
     word-spacing: 2px;
     color: #7a3737;
+    background-color: rgba(226, 200, 169, 0.425);
+    padding: 1%;
     font-weight: normal;
     text-decoration: none;
     font-style: italic;
     font-variant: normal;
     text-transform: uppercase;
     margin: 2%;
+    text-align: center;
+}
+
+.goblinGrumble{
+    font-family: "Are You Serious", cursive;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    padding: 1%;
+    word-spacing: 2px;
+    color: #7a3737;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    margin: 2%;
+    text-align: center;
+}
+
+.goblinYELL{
+    font-family: "Freckle Face", system-ui;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #7a3737;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
     text-align: center;
 }
 
@@ -61,7 +91,6 @@ a.fantasyButton:hover{
     width: 25%;
     padding: 0;
     margin: auto;
-    transform: translateY(30%);
 }
 
 

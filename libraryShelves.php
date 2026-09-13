@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>The Library</title>
 
     <!-- Google fantasy font as requested-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +15,12 @@
     <script src="Scripts/soundHandler.js"></script>
 </head>
 <body>
-    <!-- This page contains authentic human art gathered from Pixabay. Thank you to all the hardworking
-        artists who made this fantasy theme possible! -->
-    <audio autoplay loop>
-        <source src="Sounds/Tavern.mp3">
-    </audio>
-
-    
-    <div class="buttonGrid">
-        <a href="libraryShelves.php" class="fantasyButton" >Explore the Shelves</a>
-        <a href="underConstruction.html" class="fantasyButton">More coming soon!</a>
-        <a href="underConstruction.html" class="fantasyButton">Developer's Closet</a>
-        <a href="index.html" class="fantasyButton" >LET ME OUTTA HERE</a>
+    <div>
+        <h1 class="fantasyScratch">The collector's treasures will be unveiled soon!</h1>
     </div>
 
-
+    <?php 
+    echo "The php is working";
+    ?>
 </body>
 </html>
